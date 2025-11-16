@@ -1,5 +1,8 @@
 # ShoppingWeb
 
+Jenkin steps- html css files create ..... push to github (dont add readme files) .....open jenkin (usually localhost:8080)- new item - pipeline - ok .....github repo---github hook trigger for gitscm polling  check ---pipeline script --- done
+
+
 git init
 git add .
 git commit -m "Initial commit of portfolio website"
@@ -40,4 +43,13 @@ EXPOSE
 
 4)docker run -d -p 8080:80 travel-agency-website:v1
 
-
+Using Maven 
+mvn archetype:generate -DgroupId=com.myblog -DartifactId=MyBlog -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+2) create html files in MyBlog/src/main/webapp/css/style.css
+3)create css in MyBlog/src/main/webapp/css/style.css
+4)create web.xml 
+5)update pom.xml as needed 
+6)mvn clean
+mvn compile
+mvn package
+7)use jetty in pom to run locally 
